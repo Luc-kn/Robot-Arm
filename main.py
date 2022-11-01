@@ -192,7 +192,7 @@ while True:
                             robot_release(EAST)
                         else:
                             robot_release(WEST)
-              
+             
                             #Move a wheel stack from the middle to the right.
                             killswitch()
                             if stop == 0:
@@ -204,7 +204,7 @@ while True:
                                     robot_release(NORTH)
                                 else:
                                     robot_release(EAST)
-                    
+                   
         if color == color.GREEN:
             killswitch()
             while stop != 0:                
@@ -215,12 +215,11 @@ while True:
                 else:
                     robot_release(NOWE)
                 killswitch()
-                
+               
         if color == color.YELLOW:
              killswitch()
-             while stop != 0: 
+             while stop != 0:
                 killswitch()
                 # Play three beeps to indicate that the initialization is complete.
                 ev3.speaker.beep()
                 wait(200)
-
